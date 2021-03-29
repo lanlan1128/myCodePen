@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas元素监听点击事件</title>
+    <style>
+      #myCanvas {
+        padding: 100px;
+        border: 10px solid green;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+    <script type="module">
+      import { Canvas, Rect } from "./js/canvas.js";
+      const canvas = document.getElementById("myCanvas");
+      const canvasIns = new Canvas(canvas);
+    </script>
+  </body>
+</html>
